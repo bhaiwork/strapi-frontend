@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchCategories} from '../lib/stripe';
+import {fetchCategories} from '../lib/page';
 import { AxiosResponse } from 'axios';
 import { ICategory, ICollectionResponse } from '../types/page';
 import Image from 'next/image';

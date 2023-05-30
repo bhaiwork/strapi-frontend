@@ -13,7 +13,7 @@ export interface IPagination{
 }
 export interface IImageCategoryData{
     data:{
-        attributes:{
+          attributes:{
             formats:{
                 thumbnail:{
                     url:string;

@@ -1,5 +1,5 @@
-import CategoryData from '@/components/CategoryData'
-import Image from 'next/image'
+import CategoryData from '@/components/CategoryData';
+import Image from 'next/image';
 
 export default function Home() {
   return (

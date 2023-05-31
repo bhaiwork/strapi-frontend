@@ -111,7 +111,7 @@ const Slug = ({product,notFound=false,cart,setCart}:IPropType) => {
         <p className="leading-relaxed">{product.attributes.Description}</p><br/>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div className=" ml-6 items-center">
-            <span className="mr-3 font-bold">Free Delivery on {' '}{product.attributes.Quantity}{' '}Quantity</span><br/>
+            <span className="mr-3 font-bold">Free Delivery on Advance cash</span><br/>
           </div>
         </div>
         {/* quantity */}

@@ -18,13 +18,13 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
   //   console.log('handling search');
   // }
   return (
-    <div className='my-8 flex items-center justify-between border-b-2 border-gray-100'>
+    <div className='my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
       <ul className='flex items-center'>
         <li className={'mr-6 pb-4 border-b-4 rounded-sm' +
         `${
           router.pathname ==='/' 
           ? ' border-b-primary-dark text-primary'
-          : ' border-b-white text-gray-400'
+          : ' border-b-white text-gray-900'
         }`}>
           <Link href="/" className='font-bold'>Categories</Link>  
         </li>
@@ -36,7 +36,7 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
             <li className={'mr-6 pb-4 border-b-4 rounded-sm'+`${
               isActiveLink(category)
               ? ' border-b-primary-dark text-primary'
-              : ' border-b-white text-gray-400'
+              : ' border-b-white text-gray-900'
             }`} 
             key={category.id}>
               <Link href={`/category/${category.attributes.Slug}`}>{category.attributes.Title}</Link>

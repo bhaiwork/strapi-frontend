@@ -16,17 +16,17 @@ const NavBar = ({cart}:IPropType) => {
             </div>
         </Link>
         <ul className='flex items-center'>
-            <li className='mr-6 font-medium text-gray-600'>
+            <li className='mr-6 font-bold text-gray-600 '>
                 <Link href="/">Home</Link>
             </li>
-            <li className='mr-6 font-medium text-gray-600'>
-                <Link href="#">About</Link>
+            <li className='mr-6 font-bold text-gray-600'>
+                <Link href="/checkout">About</Link>
             </li>
             {/* <li className='mr-6 font-medium text-gray-600'>
                 <Link href="#">Categories</Link>
             </li> */}
-            <li className='mr-6 font-medium text-gray-600'>
-                <Link href="#">Contact us</Link>
+            <li className='mr-6 font-bold text-gray-600'>
+                <Link href="/checkout">Contact us</Link>
             </li>
             <li className='mr-6 font-medium text-gray-600'>
                 <span className='flex'>
@@ -39,7 +39,7 @@ const NavBar = ({cart}:IPropType) => {
 
         <ul className='flex items-center'>
             <li className='mr-6 font-medium text-gray-600'>
-                <Link href="#" className='hover:text-gray-400'><button>Login in</button></Link>
+                <Link href="#" className='hover:text-gray-400 font-bold'><button>Login in</button></Link>
             </li>
             <li className='font-medium text-gray-600'>
                 <Link href="#" className='bg-primary py-2 px-4 rounded-sm text-white hover:bg-primary-dark transition-all'><button>Sign up</button></Link>

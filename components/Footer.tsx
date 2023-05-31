@@ -3,8 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
-  return <footer className='text-gray-800  mt-12 bottom-5  left-0 bg-white w-full'>
-    <div className='container mx-auto flex items-center  md:flex-row lg:flex-row flex-col'>
+  return <footer className='text-gray-800  mt-5 border-t-2 border-primary bottom-5  left-0 bg-white w-full'>
+    <div className='container mx-auto flex items-center  md:flex-row lg:flex-row flex-col mt-2'>
       <Link href="/" className="flex item-center justify-center md:justify-start text-gray-900">
         <Image src={'/logo.png'} alt="" height={35} width={35}/>
         <span className='px-3 pt-2'>Your BMS Store</span>

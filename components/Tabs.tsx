@@ -20,7 +20,7 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
   return (
     <>
     {/* serach bar */} 
-    <div className="flex items-center">
+    <div className="flex items-center border-b-2 border-gray-200">
                 <svg
                     className="h-4 fill-gray-500"
                     xmlns="http://www.w3.org/2000/svg"
@@ -31,12 +31,12 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
                     onChange={(e) => handleOnSearch(e.target.value)}
                     type="text"
                     placeholder="Search"
-                    className="outline-none px-2 py-1 ml-1"
+                    className="px-2 py-1 ml-1 outline-0"
                     
                 />
       </div>
-    <div className='px-5  my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
-      <ul className='flex items-center'>
+    <div className='px-5  my-5 flex items-center justify-between border-b-2 border-gray-200 font-semibold'>
+      <ul className='lg:flex items-center'>
         <li className={'mr-6 pb-4 border-b-4 rounded-sm' +
         `${
           router.pathname ==='/' 

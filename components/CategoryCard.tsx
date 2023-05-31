@@ -11,7 +11,7 @@ const CategoryCard = ({category}:IPropType) => {
     <div className=''>
          {/* section */}
     <section className=" text-gray-600 body-font">
-        <div className="container px-5  mx-auto">
+        <div className="container px-5">
           <div className="flex flex-wrap -m-4">
                 <div className="mx-auto  text-center">
                   <div className="bg-gray-200 p-5 rounded-lg">

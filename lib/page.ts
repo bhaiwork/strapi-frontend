@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 const api=axios.create({
     baseURL:'https://strapi-deploy-kpio.onrender.com',
@@ -9,4 +9,14 @@ const api=axios.create({
 });
 
 //Categories
-export const fetchCategories=async()=> api.get('/api/categories?populate=*')
+export const fetchCategories=async(queryString:string)=> api.get(`/api/categories?${queryString}`);
+// export const fetchCategories1=async()=> api.get('/api/categories')
+export const fetchCategories1=async()=> api.get('/api/categories?populate=*')
+
+
+
+//Products
+// export const fetchCategories=async()=> api.get('/api/categories?populate=*')
+export const fetchProducts=async(queryString:string)=> api.get(`/api/products?${queryString}`)
+
+export const fetchProductBySlug=async(queryString:string)=> api.get(`/api/products?${queryString}`);

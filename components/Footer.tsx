@@ -3,15 +3,15 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
-  return <footer className='text-gray-800 fixed mt-12 bottom-0  left-0 bg-white w-full'>
+  return <footer className='text-gray-800  mt-12 bottom-5  left-0 bg-white w-full'>
     <div className='container mx-auto flex items-center  md:flex-row lg:flex-row flex-col'>
       <Link href="/" className="flex item-center justify-center md:justify-start text-gray-900">
         <Image src={'/logo.png'} alt="" height={35} width={35}/>
-        <span className='px-3 pt-2'>Shaheen BMS Store</span>
+        <span className='px-3 pt-2'>Your BMS Store</span>
       </Link> 
 
     <p className='text-sm text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0'>
-      @ 2023 Shaheen BMS Store
+      @ 2023 BMS Store
     </p>
     {/* social icons */}
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

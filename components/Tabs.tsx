@@ -18,35 +18,9 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
   //   console.log('handling search');
   // }
   return (
-    <div className='px-5  my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
-      <ul className='flex items-center'>
-        <li className={'mr-6 pb-4 border-b-4 rounded-sm' +
-        `${
-          router.pathname ==='/' 
-          ? ' border-b-primary-dark text-primary'
-          : ' border-b-white text-gray-900'
-        }`}>
-          <Link href="/" className='font-bold'>Categories</Link>  
-        </li>
-        {
-          
-          categories.map(category=>{
-
-            return (
-            <li className={'mr-6 pb-4 border-b-4 rounded-sm'+`${
-              isActiveLink(category)
-              ? ' border-b-primary-dark text-primary'
-              : ' border-b-white text-gray-900'
-            }`} 
-            key={category.id}>
-              <Link href={`/category/${category.attributes.Slug}`}>{category.attributes.Title}</Link>
-            </li>
-            )
-        })
-        }
-      </ul>
-      {/* serach bar */}
-      <div className="flex items-center">
+    <>
+    {/* serach bar */} 
+    <div className="flex items-center">
                 <svg
                     className="h-4 fill-gray-500"
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +34,37 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
                     className="outline-none px-2 py-1 ml-1"
                     
                 />
-            </div>
+      </div>
+    <div className='px-5  my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
+      <ul className='flex items-center'>
+        <li className={'mr-6 pb-4 border-b-4 rounded-sm' +
+        `${
+          router.pathname ==='/' 
+          ? ' border-b-primary-dark text-primary'
+          : ' border-b-white text-gray-900'
+        }`}>
+          <Link href="/" className='font-bold'>Categories</Link>  
+        </li>
+        {
+          
+          categories.map(category=>{
+            return (
+            <li className={'mr-6 pb-4 border-b-4 rounded-sm'+`${
+              isActiveLink(category)
+              ? ' border-b-primary-dark text-primary'
+              : ' border-b-white text-gray-900'
+            }`} 
+            key={category.id}>
+              <Link href={`/category/${category.attributes.Slug}`}>{category.attributes.Title}</Link>
+            </li>
+            )
+        })
+        }
+      </ul>
 
-    </div>
+      
+      </div>
+      </>
   )
 }
 

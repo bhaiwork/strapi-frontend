@@ -7,7 +7,7 @@ interface IPropType{
     product:IProducts;
 }
 const ProductCard = ({product}:IPropType) => {
-  return <div className='container px-5 '>
+  return <div className='container px-5'>
 
     {/* section */}
     <section className="text-gray-600 body-font">

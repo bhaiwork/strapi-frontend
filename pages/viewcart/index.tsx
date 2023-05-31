@@ -103,8 +103,8 @@ const ViewCart = ({cart,setCart,productQty,setProductQty,setSubtotal,subtotal}:I
   
 
   return (
-    <section className="text-gray-600 body-font flex lg:w-2/3  w-full">
-    <div className="container px-5 py-24 mx-auto min-h-screen flex">
+    <section className="text-gray-600 body-font ">
+    <div className="container lg:w-2/3 w-full px-5 py-24 mx-auto min-h-screen">
       {/* left side */}
     <div className="w-full mb-12">
       <h2 className='lg:text-2xl text-xl font-bold pb-3'>Shopping Cart</h2>
@@ -157,13 +157,13 @@ const ViewCart = ({cart,setCart,productQty,setProductQty,setSubtotal,subtotal}:I
     </div>
     {/* Right Side */}
     <div className='py-5  mx-auto w-full lg:w-1/3 leading-loose'>
-              <h2 className='lg:text-2xl text-xl'>Order Summary</h2><br/>
+              <h2 className='lg:text-2xl text-xl text-bold underline font-bold'>Order Summary</h2><br/>
               <h2 className='font-bold'>Quantity{' '}{productQty}Products</h2>
               <div className='font-bold'>
               Subtotal: {subtotal}<br/>
               <Link href="/checkout"><button type='button' className=' py-2 bg-primary-dark w-[100%] text-white cursor-pointer mt-5 mx-auto'>Checkout</button></Link>
               </div>
-        </div>
+    </div>
     </div>
   </section>
   )

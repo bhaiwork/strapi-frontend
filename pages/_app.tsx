@@ -16,7 +16,8 @@ export default function MyApp({ Component, pageProps }:AppProps) {
     const [subtotal,setSubtotal]=useState<number>(0);
 
   return <>
-  <div className='container mx-auto font-mono px-5'>
+  {/* container mx-auto  */}
+  <div className='font-mono px-5'>
   <NavBar key={reloadKey} cart={cart}/>
   <TopHeader/>
 

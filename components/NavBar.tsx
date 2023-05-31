@@ -8,7 +8,7 @@ interface IPropType{
 }
 
 const NavBar = ({cart}:IPropType) => {  
-  return <nav className='container flex w-full fixed top-0 right-0 left-0 bg-white  mt-0 items-center justify-between py-1 px-5  mx-auto md:flex-row lg:flex-row flex-col z-[990] mb-3'>
+  return <nav className='flex w-full lg:fixed top-0 right-0 left-0 bg-white  mt-5 items-center justify-between py-1 px-5  mx-auto md:flex-row lg:flex-row flex-col z-[990] mb-3'>
         <Link href="/" >
             <div className='flex items-center cursor-pointer' >
                 <Image src="/logo.png" alt="logo" width="35" height="35" />

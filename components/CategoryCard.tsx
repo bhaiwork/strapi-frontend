@@ -8,7 +8,7 @@ interface IPropType{
 }
 const CategoryCard = ({category}:IPropType) => {
   return (
-    <div>
+    <div className=''>
          {/* section */}
     <section className=" text-gray-600 body-font">
         <div className="container px-5  mx-auto">

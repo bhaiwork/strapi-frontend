@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
-  return <footer className='text-gray-800 mt-12 bottom-0 fixed left-0 bg-white w-full'>
+  return <footer className='text-gray-800 fixed mt-12 bottom-0  left-0 bg-white w-full'>
     <div className='container mx-auto flex items-center  md:flex-row lg:flex-row flex-col'>
       <Link href="/" className="flex item-center justify-center md:justify-start text-gray-900">
         <Image src={'/logo.png'} alt="" height={35} width={35}/>

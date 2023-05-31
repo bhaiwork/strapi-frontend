@@ -8,7 +8,7 @@ interface IPropType{
 }
 
 const NavBar = ({cart}:IPropType) => {  
-  return <nav className='flex w-full lg:fixed top-0 right-0 left-0 bg-white  mt-5 items-center justify-between py-1 px-5  mx-auto md:flex-row lg:flex-row flex-col z-[990] mb-3'>
+  return <nav className='container flex  fixed top-0 right-0 left-0 bg-white  mt-0 items-center justify-between py-1 px-5  mx-auto md:flex-row lg:flex-row flex-col z-[990] mb-3'>
         <Link href="/" >
             <div className='flex items-center cursor-pointer' >
                 <Image src="/logo.png" alt="logo" width="35" height="35" />
@@ -26,18 +26,18 @@ const NavBar = ({cart}:IPropType) => {
                 <Link href="#">Categories</Link>
             </li> */}
             <li className='mr-6 font-bold text-gray-600'>
-                <Link href="/checkout">Contact us</Link>
+                <Link href="/checkout">Contact</Link>
             </li>
             <li className='mr-6 font-medium text-gray-600'>
                 <span className='flex'>
-                <Link href="/viewcart"><Image src="/top-header.png" alt="" width={55} height={55}/></Link>
+                <Link href="/viewcart"><Image src="/top-header.png" alt="" width={55} height={55} className='object-cover md:w-10 md:h-10 lg:w-20 lg:h-20'/></Link>
                 <span className='bg-primary rounded-full text-white w-7 h-7 text-center'>{cart.length}</span>
                 </span>
                 
             </li>
         </ul>
 
-        <ul className='flex items-center'>
+        <ul className='flex items-center py-5'>
             <li className='mr-6 font-medium text-gray-600'>
                 <Link href="#" className='hover:text-gray-400 font-bold'><button>Login in</button></Link>
             </li>

@@ -18,7 +18,7 @@ const Tabs = ({categories,handleOnSearch}:IPropType) => {
   //   console.log('handling search');
   // }
   return (
-    <div className='my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
+    <div className='px-5  my-8 flex items-center justify-between border-b-2 border-gray-100 font-semibold'>
       <ul className='flex items-center'>
         <li className={'mr-6 pb-4 border-b-4 rounded-sm' +
         `${

@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }:AppProps) {
 
   return <>
   {/* container mx-auto  */}
-  <div className='font-mono px-5'>
+  <div className='container px-10 mx-auto font-mono'>
   <NavBar key={reloadKey} cart={cart}/>
   <TopHeader/>
 
